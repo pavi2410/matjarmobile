@@ -54,7 +54,7 @@ export default function Sidebar({sidebarOpen, setSidebarOpen}) {
           </Link>
         </li>
         <li>
-          <Link to="/shop-single">
+          <Link to="/shopsingle">
             <i className="fa fa-list-alt"/>
             Product Details
           </Link>

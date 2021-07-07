@@ -3,7 +3,7 @@ import './css/materialize.css';
 import './css/style.css';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import {Footer, Navbar, Product, Sidebar} from "./components";
+import {Footer, Navbar, Sidebar} from "./components";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
@@ -36,18 +36,12 @@ function App() {
         <Route path="/register" exact component={Register}/>
         <Route path="/cart" exact component={Cart}/>
         <Route path="/product" exact component={Product}/>
-        {/*<Route path="/shop-single" exact component={}/>*/}
         <Route path="/checkout" exact component={Checkout}/>
         <Route path="/blog" exact component={Blog}/>
-        {/*<Route path="/error404" exact component={}/>*/}
-        {/*<Route path="/testimonial" exact component={}/>*/}
         <Route path="/about-us" exact component={About}/>
         <Route path="/contact" exact component={Contact}/>
-        {/*<Route path="/login" exact component={}/>*/}
-        {/*<Route path="/register" exact component={}/>*/}
         <Route path="/testimonial" exact component={Testimonial}/>
         <Route path="/shopsingle" exact component={ShopSingle}/>
-        <Route path="/product" exact component={Product}/>
         <Route path="/" component={Error404}/>
       </Switch>
       <div id="fakeLoader"/>
