@@ -1,5 +1,6 @@
 import {useEffect, useRef, useState} from "react";
 import Materialize from "materialize-css";
+import {Link} from "react-router-dom";
 
 export default function Sidebar({sidebarOpen, setSidebarOpen}) {
   const sidebarRef = useRef(null)
@@ -41,76 +42,76 @@ export default function Sidebar({sidebarOpen, setSidebarOpen}) {
           <h6>Mobile Developer</h6>
         </li>
         <li className="li-top">
-          <a href="index.html">
+          <Link to="/">
             <i className="fa fa-home"/>
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="product.html">
+          <Link to="/product">
             <i className="fa fa-shopping-basket"/>
             Product List
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="shop-single.html">
+          <Link to="/shop-single">
             <i className="fa fa-list-alt"/>
             Product Details
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="cart.html">
+          <Link to="/cart">
             <i className="fa fa-shopping-cart"/>
             Shopping Cart
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="checkout.html">
+          <Link to="/checkout">
             <i className="fa fa-send"/>
             Checkout
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="blog.html">
+          <Link to="/blog">
             <i className="fa fa-bold"/>
             Blog
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="error404.html">
+          <Link to="/error404">
             <i className="fa fa-hourglass-half"/>
             404
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="testimonial.html">
+          <Link to="/testimonial">
             <i className="fa fa-support"/>
             Testimonial
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="about-us.html">
+          <Link to="/about-us">
             <i className="fa fa-user"/>
             About Us
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="contact.html">
+          <Link to="/contact">
             <i className="fa fa-envelope-o"/>
             Contact Us
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="login.html">
+          <Link to="/login">
             <i className="fa fa-sign-in"/>
             Login
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="register.html">
+          <Link to="/register">
             <i className="fa fa-user-plus"/>
             Register
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
