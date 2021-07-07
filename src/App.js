@@ -10,6 +10,12 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Checkout from "./pages/Checkout";
+import Error404 from "./pages/Error404";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Testimonial from "./pages/Testimonial";
+import ShopSingle from "./pages/ShopSingle";
+import Product from "./pages/Product";
 
 // import './css/owl.carousel.css';
 // import './css/owl.theme.css';
@@ -26,6 +32,8 @@ function App() {
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
       <Switch>
         <Route path="/" exact component={Home}/>
+        <Route path="/login" exact component={Login}/>
+        <Route path="/register" exact component={Register}/>
         <Route path="/cart" exact component={Cart}/>
         <Route path="/product" exact component={Product}/>
         {/*<Route path="/shop-single" exact component={}/>*/}
@@ -37,6 +45,10 @@ function App() {
         <Route path="/contact" exact component={Contact}/>
         {/*<Route path="/login" exact component={}/>*/}
         {/*<Route path="/register" exact component={}/>*/}
+        <Route path="/testimonial" exact component={Testimonial}/>
+        <Route path="/shopsingle" exact component={ShopSingle}/>
+        <Route path="/product" exact component={Product}/>
+        <Route path="/" component={Error404}/>
       </Switch>
       <div id="fakeLoader"/>
       <Footer/>
