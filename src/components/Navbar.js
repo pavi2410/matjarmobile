@@ -10,7 +10,7 @@ export default function Navbar({setSidebarOpen}) {
       </div>
       <div className="site-brand">
         <Link to="/">
-          <h1>MATJAR</h1>
+          <h1>360 Commerce</h1>
         </Link>
       </div>
       <div className="side-nav-panel-right">

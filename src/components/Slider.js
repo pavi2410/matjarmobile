@@ -5,7 +5,7 @@ export default function Slider() {
         <img src="/src/img/slide1.png" alt=""/>
         <div className="caption slider-content center-align ">
           <div className="container">
-            <h2>Welcome to Matjar</h2>
+            <h2>Welcome to 360 Commerce</h2>
             <h4>Lorem ipsum dolor sit amet.</h4>
             <a href className="button-default">
               Learn More
